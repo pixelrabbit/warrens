@@ -1,0 +1,32 @@
+<div class="card {{no_maxwidth ? "card--no_maxwidth" : ""}}">
+
+    {% if eyebrow %}
+    <div class="card__eyebrow">{{eyebrow}}</div>
+    {% endif %}
+
+    <{{heading_element}} class="card__heading">
+        {{heading}}
+    </{{heading_element}}>
+    <div>
+        {{content}}
+    </div>
+
+    {# buttons #}
+    {% if buttons %}
+    <div class="card__btn_container">
+    {% for button in buttons %}
+        {% include "../button/button.html.twig" with button %}
+    {% endfor %}
+    </div>
+    {% endif %}
+
+    {# links #}
+    {% if links %}
+    <div class="card__link_container">
+    {% for link in links %}
+        {% include "../link/link.html.twig" with link %}
+    {% endfor %}
+    </div>
+    {% endif %}
+
+</div>

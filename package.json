@@ -1,0 +1,33 @@
+{
+  "name": "warrens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "storybook": "start-storybook"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@degjs/storybook-addon-taffy": "^1.0.4",
+    "@storybook/addon-a11y": "^6.0.21",
+    "@storybook/addon-actions": "^6.0.21",
+    "@storybook/addon-controls": "^6.0.21",
+    "@storybook/addon-docs": "^6.0.21",
+    "@storybook/addon-notes": "^5.3.21",
+    "@storybook/addon-viewport": "^6.0.21",
+    "@storybook/addons": "^6.0.21",
+    "@storybook/html": "^6.0.21",
+    "@storybook/preset-scss": "^1.0.2",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.3.0",
+    "drupal-attribute": "^1.0.2",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.2",
+    "style-loader": "^1.2.1",
+    "twig": "^1.15.2",
+    "twig-drupal-filters": "^3.1.2",
+    "twig-loader": "^0.5.5"
+  }
+}

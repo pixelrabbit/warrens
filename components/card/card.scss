@@ -1,0 +1,10 @@
+.card {border:1px solid gray; padding:1rem; max-width: 32rem;}
+.card--no_maxwidth {max-width: none;}
+
+.card__eyebrow {font-size: 0.75rem; font-weight: bold; color:#444}
+.card__heading {margin-top: 0;}
+
+.card__btn_container {
+    .btn {margin-top: 0.5rem; margin-right: 0.5rem;}
+}
+    .link {margin-right: 1rem;}
