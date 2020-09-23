@@ -7,5 +7,6 @@ module.exports = {
     "@storybook/addon-docs",
     '@storybook/preset-scss',
     // '@whitespace/storybook-addon-html',
+    // "storybook-addon-preview"
   ],
 };

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "storybook": "start-storybook"
+    "storybook": "start-storybook",
+    "build": "build-storybook -o ./build"
   },
   "author": "",
   "license": "ISC",
@@ -25,6 +26,7 @@
     "drupal-attribute": "^1.0.2",
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.2",
+    "storybook-addon-preview": "^2.0.1",
     "style-loader": "^1.2.1",
     "twig": "^1.15.2",
     "twig-drupal-filters": "^3.1.2",
