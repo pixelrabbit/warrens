@@ -1,4 +1,9 @@
-<div class="card {{no_maxwidth ? "card--no_maxwidth" : ""}}">
+{% if palette == "default" %}
+    {% set paletteClass = null %}
+{% else %}
+    {% set paletteClass = "palette--"~palette %}
+{% endif %}
+<div {{bem("card", null, null, [paletteClass])}}>
 
     {% if eyebrow %}
     <div class="card__eyebrow">{{eyebrow}}</div>

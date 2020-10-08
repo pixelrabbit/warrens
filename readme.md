@@ -4,4 +4,4 @@ https://storybook.js.org/docs/react/essentials/controls#fully-custom-args
 
 ## ToDo
 * how to grab HTML from page
-* add global styling and js
+* twig component directory alias

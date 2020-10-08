@@ -3,12 +3,12 @@ import "./typography.scss";
 // import './block.js';
 
 export default {
-  title: "Base/Typography",
+  title: "Foundation/Typography",
   argTypes: {
     lorem: {
       description: "Filler text",
       defaultValue:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat libero eos quas. Voluptas eos, accusantium sed dolorum, voluptates voluptatem eaque incidunt magnam fuga cumque quas doloremque expedita. Suscipit, ratione illum.",
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat libero eos quas. Voluptas eos, accusantium sed dolorum, voluptates voluptatem eaque incidunt magnam fuga cumque quas doloremque expedita. <a href='#'>Suscipit, ratione illum.</a>",
       control: {
         type: "text",
       },

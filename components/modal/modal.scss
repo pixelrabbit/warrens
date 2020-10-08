@@ -1,0 +1,4 @@
+.link {}
+.link--chevron {display: inline-block;
+    &:after {content: \8921;}
+}
