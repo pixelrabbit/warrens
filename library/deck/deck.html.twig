@@ -1,0 +1,55 @@
+<section {{bem("deck")}}>
+
+    {% if eyebrow %}
+    <div class="deck__eyebrow">{{eyebrow}}</div>
+    {% endif %}
+
+    {# heading #}
+    {% if heading %}
+    <{{heading_element}} class="deck__heading">
+        {{heading}}
+    </{{heading_element}}>
+    {% endif %}
+
+    {# content #}
+    {% if content %}
+    <div class="deck__content">
+        {{content}}
+    </div>
+    {% endif %}
+
+    {# cards #}
+    {% set col = {
+        "2": "col-12 col-sm-6",
+        "3": "col-12 col-sm-6 col-lg-4",
+        "4": "col-12 col-sm-6 col-lg-3"
+    } %}
+    {% if cards %}
+        <ul class="deck__cardlist row">
+            {% for card in cards %}
+            <li class="{{col[columns]}}">
+                {% include "../card/card.html.twig" with card %}
+            </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    {# buttons #}
+    {% if buttons %}
+    <div class="deck__btn_container">
+    {% for button in buttons %}
+        {% include "../button/button.html.twig" with button %}
+    {% endfor %}
+    </div>
+    {% endif %}
+
+    {# links #}
+    {% if links %}
+    <div class="deck__link_container">
+    {% for link in links %}
+        {% include "../link/link.html.twig" with link %}
+    {% endfor %}
+    </div>
+    {% endif %}
+
+</section>

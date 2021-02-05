@@ -5,7 +5,7 @@ import './modal.js';
 import {card_default} from  "../card/card.stories.js"
 
 export default {
-  title: "Components/Modal"
+  title: "Pattern/Modal"
 };
 
 export const modal_default = modal.bind({});

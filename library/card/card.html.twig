@@ -1,9 +1,4 @@
-{% if palette == "default" %}
-    {% set paletteClass = null %}
-{% else %}
-    {% set paletteClass = "palette--"~palette %}
-{% endif %}
-<div {{bem("card", null, null, [paletteClass])}}>
+<div {{bem("card", [style], null, null)}}>
 
     {% if eyebrow %}
     <div class="card__eyebrow">{{eyebrow}}</div>
@@ -14,7 +9,7 @@
     </{{heading_element}}>
     <div>
         {{content}}
-    </div>
+    </div> 
 
     {# buttons #}
     {% if buttons %}

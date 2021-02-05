@@ -1,0 +1,6 @@
+.deck__heading {margin-top: 0;}
+p.deck__heading {font-weight: bold;}
+
+.deck__cardlist {display: flex; list-style-type: none; margin: 1rem 0; padding: 0;
+    > li {margin:0.5rem 0;}
+}

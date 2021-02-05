@@ -4,4 +4,4 @@ https://storybook.js.org/docs/react/essentials/controls#fully-custom-args
 
 ## ToDo
 * how to grab HTML from page
-* twig component directory alias
+* add namespaces to twig include paths

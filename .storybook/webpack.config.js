@@ -14,8 +14,8 @@ module.exports = ({ config }) => {
 
   // set components alias
   config.resolve.alias = {
-    '@components': path.resolve(__dirname, '../components'),
-    '@foundation': path.resolve(__dirname, '../components/foundation')
+    '@library': path.resolve(__dirname, '../library'),
+    '@components': path.resolve(__dirname, '../components')
   }
 
   

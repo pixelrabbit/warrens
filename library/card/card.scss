@@ -1,0 +1,15 @@
+.card {padding:1rem;}
+.card--no_padding {padding: 0;}
+.card--outline {border:1px solid #333}
+.card--inverse {background: #333; color: #fff;}
+
+.card__eyebrow {font-size: 0.75rem; font-weight: bold; color:#444}
+.card__heading {margin-top: 0;}
+p.card__heading {font-weight: bold;}
+
+.card__btn_container {margin-top: 1rem;
+    .btn {margin-top: 0.5rem; margin-right: 0.5rem;}
+}
+.card__link_container {margin-top: 1rem;
+    .link {margin-right: 1rem;}
+}
