@@ -54,7 +54,6 @@ import { link_chevron } from "@library/link/link.stories.js";
 
 export const card_default = card.bind({});
 card_default.args = {
-  palette: "default",
   style: "default",
   eyebrow: null,
   heading_element: "h3",
