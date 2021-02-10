@@ -15,7 +15,7 @@
     {% if buttons %}
     <div class="card__btn_container">
     {% for button in buttons %}
-        {% include "../button/button.html.twig" with button %}
+        {% include "@library/button/button.html.twig" with button %}
     {% endfor %}
     </div>
     {% endif %}
@@ -24,7 +24,7 @@
     {% if links %}
     <div class="card__link_container">
     {% for link in links %}
-        {% include "../link/link.html.twig" with link %}
+        {% include "@library/link/link.html.twig" with link %}
     {% endfor %}
     </div>
     {% endif %}

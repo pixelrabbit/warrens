@@ -2,4 +2,4 @@
 {% if target != "_self" %}
     {% set attrTarget = "target='" ~ target ~ "'" %}
 {% endif %}
-<a {{bem("link", icon)}} href="{{href}}" {{attrTarget}}>{{text}}</a>
+<a {{bem("link", icon)}} href="{{href}}" {{attrTarget}}><span>{{text}}</span></a>

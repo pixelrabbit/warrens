@@ -1,4 +1,11 @@
-.link {}
-.link--chevron {display: inline-block;
-    &:after {content: \8921;}
+.link {text-decoration: none;
+    > span {text-decoration: underline;}
 }
+@mixin append_icon($code) {
+    $content: "\00a0#{$code}";
+    &:after {overflow:hidden; font-family: "FontAwesome";  text-decoration: none; line-height: 1; font-size: 0.75em; content:$content;}
+}
+.link--chevron {@include append_icon("\f054");}
+.link--modal {@include append_icon("\f2d2");}
+.link--new {@include append_icon("\f2d0");}
+.link--jump {@include append_icon("\f13a");}

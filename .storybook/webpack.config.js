@@ -2,23 +2,17 @@ const path = require('path');
 
 module.exports = ({ config }) => {
 
-  // Twig:
+  //twig js loader
   config.module.rules.push({
     test: /\.twig$/,
-    use: [
-      {
-        loader: 'twig-loader',
-      },
-    ],
-  });
+    use: 'twigjs-loader',
+});
 
   // set components alias
   config.resolve.alias = {
     '@library': path.resolve(__dirname, '../library'),
-    '@components': path.resolve(__dirname, '../components')
+    '@foundation': path.resolve(__dirname, '../foundation'),
   }
-
-  
 
   return config;
 };

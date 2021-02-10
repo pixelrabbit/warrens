@@ -31,6 +31,7 @@
     "style-loader": "^1.2.1",
     "twig": "^1.15.2",
     "twig-drupal-filters": "^3.1.2",
-    "twig-loader": "^0.5.5"
+    "twig-loader": "^0.5.5",
+    "twigjs-loader": "^1.0.2"
   }
 }

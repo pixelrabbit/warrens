@@ -7,22 +7,11 @@ import bemExtension from "./bemExtension";
 twigDrupal(Twig);
 Twig.extendFunction("bem", bemExtension);
 
+configure(require.context("../library", true, /\.stories\.js$/), module);
 
 export const parameters = {
-    options: {
-      storySort: {
-        order: ['Foundation', 'Base', 'Components','Patterns'],
-      },
-    },
-    // controls formatting in HTML tab
-    html: {
-      prettier: {
-        tabWidth: 4,
-        useTabs: true,
-        htmlWhitespaceSensitivity: 'strict',
-      },
-    },
-  };
-
-
-configure(require.context("../library", true, /\.stories\.js$/), module);
+  controls: { expanded: true },
+  storySort: {
+    order: ["Foundation", "Base", "Component", "Pattern"],
+  }
+};

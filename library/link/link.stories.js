@@ -40,3 +40,15 @@ link_modal.args = {
   ...link_default.args,
   icon: "modal",
 };
+
+export const link_new = link.bind({});
+link_new.args = {
+  ...link_default.args,
+  icon: "new",
+};
+
+export const link_jump = link.bind({});
+link_jump.args = {
+  ...link_default.args,
+  icon: "jump",
+};

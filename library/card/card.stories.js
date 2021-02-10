@@ -3,7 +3,7 @@ import "./card.scss";
 // import './block.js';
 
 export default {
-  title: "Components/Card",
+  title: "Component/Card",
   argTypes: {
     style: {
       description: "card style",
@@ -35,15 +35,18 @@ export default {
         required: false,
       },
     },
-    buttons: {
-      description: "array of button objects (see atom/button)",
-      control: {
-        type: "object"
-      }
-    },
-    links: {
-      description: "array of links objects (see atom/link)",
-    },
+    // buttons: {
+    //   description: "array of button objects (see atom/button)",
+    //   control: {
+    //     type: "array"
+    //   }
+    // },
+    // links: {
+    //   description: "array of links objects (see atom/link)",
+    //   control: {
+    //     type: "array"
+    //   }
+    // },
   },
   
 };

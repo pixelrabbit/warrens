@@ -1,0 +1,40 @@
+<section {{bem("banner", [background_size, background_position|replace({' ': '-'})])}} style="background-image:url({{background_image}})">
+	<div class="banner__container">
+
+        {# eyebrow #}
+        {% if eyebrow %}
+        <div class="deck__eyebrow">{{eyebrow}}</div>
+        {% endif %}
+
+		{# heading #}
+		{% if heading %}
+			<{{heading_element}} class="banner__heading">
+				{{heading}}
+			</{{heading_element}}>
+		{% endif %}
+
+        {# content #}
+        {% if content %}
+        <div class="banner__content">{{content}}</div>
+        {% endif %}
+
+        {# buttons #}
+        {% if buttons %}
+        <div class="banner__btn_container">
+        {% for button in buttons %}
+            {% include "@library/button/button.html.twig" with button %}
+        {% endfor %}
+        </div>
+        {% endif %}
+
+        {# links #}
+        {% if links %}
+        <div class="banner__link_container">
+        {% for link in links %}
+            {% include "@library/link/link.html.twig" with link %}
+        {% endfor %}
+        </div>
+        {% endif %}
+
+	</div>
+</section>

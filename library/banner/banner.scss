@@ -1,0 +1,25 @@
+@function str-replace($string, $search, $replace: '') {
+    $index: str-index($string, $search);
+    
+    @if $index {
+      @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    }
+    
+    @return $string;
+  }
+
+.banner { background: #ddd; position: relative; background: no-repeat center center;
+    // @include media-breakpoint-up(lg) {height: 0; padding:33% 0 0;}
+}
+
+
+.banner--cover {background-size: cover;}
+.banner--contain {background-size: contain;}
+
+$positions: "left top","center top","right top","left center","center center","right center","left bottom","center bottom","right bottom";
+@each $pos in $positions {
+    $posclass: str-replace($pos, " ", "-");
+    .banner--#{$posclass} {background-position: #{$pos};}
+  }
+
+.banner__container {position: absolute; top:0; right:0; bottom:0; left:0; padding: 2rem;}

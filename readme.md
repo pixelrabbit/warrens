@@ -2,6 +2,8 @@ Inspired by https://medium.com/@askibinski/integrating-storybook-with-drupal-dda
 
 https://storybook.js.org/docs/react/essentials/controls#fully-custom-args
 
-## ToDo
-* how to grab HTML from page
+## To Do
+* how to grab HTML and asssets from library and implement in page
 * add namespaces to twig include paths
+* color swatches
+* add component themes
